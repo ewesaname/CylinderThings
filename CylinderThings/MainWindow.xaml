@@ -1,0 +1,71 @@
+﻿<Window x:Class="CylinderThings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CylinderThings"
+        mc:Ignorable="d"
+        Title="" Height="630" Width="800" ResizeMode="CanMinimize">
+
+    <Border BorderBrush="Crimson" BorderThickness="10" CornerRadius="20" Background="LightSteelBlue">
+    <Grid Margin="0.4,0.4,-0.8,-0.6">
+        <Image x:Name="boomImage" HorizontalAlignment="Left" Height="400" Margin="-41,105,0,0" VerticalAlignment="Top" Width="433" 
+               RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-29.751"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Source>
+                <BitmapImage UriSource="/images/Boom 1 from Xara.png"/>
+            </Image.Source>
+        </Image>
+
+        <Label Content="Cylinder Things" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="267,25,244.6,0" 
+               VerticalAlignment="Top" Width="262"/>
+
+
+        <TextBox x:Name="cylinderHeightTextBox" Text="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="89"  Margin="80,110,0,0" 
+                 BorderBrush="Black" BorderThickness="2" Background="#FFF4F4F5" />
+
+        <TextBox x:Name="unitsTextBox" Text="cm" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontWeight="DemiBold"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="89"  Margin="529,110,0,0" 
+                BorderBrush="Black" BorderThickness="2" Background="#FFF4F4F5" />
+
+        <Label Name="cylinderHeightLabel" Content="Enter Cylinder Height" HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="75,204,0,0" VerticalAlignment="Top" Width="160"/>
+        <Label Name="cylinderRadiusLabel" Content="Enter Cylinder Radius" HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="324,211,0,0" VerticalAlignment="Top" Width="160"/>
+        <Label Name="enterYourUnitsLabel" Content="Enter Your Units" HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="529,204,0,0" VerticalAlignment="Top" Width="160"/>
+
+
+        <Button x:Name="clickHereButton" Margin="267,265,264.6,0" VerticalAlignment="Top" Height="131"
+                BorderBrush="Black" BorderThickness="3" Background="Gold"  Click="clickHereButton_Click" >
+
+            <TextBlock x:Name="clickHereTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Width="197" Background="Gold" 
+                       Text="Click Here To Work The Magic" Padding="10" TextAlignment="Center" TextWrapping="Wrap" FontSize="24" Height="85" />
+        </Button>
+
+        <TextBlock x:Name="cylinderVolumeTextBlock" Text="" TextAlignment="Left" FontSize="24"
+                   HorizontalAlignment="Left" Margin="153,480,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock x:Name="cylinderAreaTextBlock" Text="" TextAlignment="Left" FontSize="24"
+                   HorizontalAlignment="Left" Margin="153,529,0,0" VerticalAlignment="Top" Visibility="Visible" />
+
+
+        <Button x:Name="resetButton" Margin="631,402,50.6,0" VerticalAlignment="Top" Height="50" 
+                Content="Reset" FontSize="30"
+                BorderBrush="Black" BorderThickness="1" Background="Aqua"  Click="resetButton_Click"
+                Visibility="Hidden" />
+
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="130" Margin="331,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="cylinderRadiusTextBox" Text="4" Background="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="350,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" 
+                 BorderThickness="0" FontSize="48" FontWeight="DemiBold" TextAlignment="Center"/>
+
+    </Grid>
+    </Border>
+</Window>
