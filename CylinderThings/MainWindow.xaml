@@ -67,6 +67,7 @@
                  BorderThickness="0" FontSize="48" FontWeight="DemiBold" TextAlignment="Center"/>
 
             <ComboBox x:Name="chooseShapeCombo" HorizontalAlignment="Left" Margin="125,265,0,0" VerticalAlignment="Top" Width="113" Height="131" />
+            <ComboBox HorizontalAlignment="Left" Margin="603,265,0,0" VerticalAlignment="Top" Width="120" Height="131"/>
 
         </Grid>
     </Border>
