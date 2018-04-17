@@ -70,8 +70,8 @@ namespace CylinderThings
             unitsTextBox.Text = "cm";
             clickHereTextBlock.Text = "Click Here To Work The Magic";
             clickHereTextBlock.FontSize = 24;
-            cylinderVolumeTextBlock.Text = "";
-            cylinderAreaTextBlock.Text = "";            
+            cylinderVolumeTextBlock.Text = "Volume";
+            cylinderAreaTextBlock.Text = "Area";            
             resetButton.Visibility = Visibility.Hidden;
             boomImage.Visibility = Visibility.Hidden;
             cylinderHeightLabel.Visibility = Visibility.Visible;

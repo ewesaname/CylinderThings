@@ -9,7 +9,7 @@
 
     <Border BorderBrush="Crimson" BorderThickness="10" CornerRadius="20" Background="LightSteelBlue">
         <Grid Margin="0.4,46.4,-0.8,-46.6">
-            <Image x:Name="boomImage" HorizontalAlignment="Left" Height="400" Margin="-41,105,0,0" VerticalAlignment="Top" Width="433" 
+            <Image x:Name="boomImage" HorizontalAlignment="Left" Height="400" Margin="-51,65,0,0" VerticalAlignment="Top" Width="433" 
                RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
                 <Image.RenderTransform>
                     <TransformGroup>
@@ -24,8 +24,8 @@
                 </Image.Source>
             </Image>
 
-            <TextBlock Text="Pump Up The Volume - You're In The Right Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-32,163.4,0" 
-               VerticalAlignment="Top" Width="458" Height="149" TextAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock Text="Pump Up The Volume - Spread Out The Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-12,163,0" 
+               VerticalAlignment="Top" Width="458" Height="100" TextAlignment="Center" TextWrapping="Wrap"/>
 
 
             <TextBox x:Name="cylinderHeightTextBox" Text="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
@@ -51,13 +51,13 @@
                        Text="Click Here To Work The Magic" Padding="10" TextAlignment="Center" TextWrapping="Wrap" FontSize="24" Height="85" />
             </Button>
 
-            <TextBlock x:Name="cylinderVolumeTextBlock" Text="" TextAlignment="Left" FontSize="24"
-                   HorizontalAlignment="Left" Margin="153,480,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-            <TextBlock x:Name="cylinderAreaTextBlock" Text="" TextAlignment="Left" FontSize="24"
-                   HorizontalAlignment="Left" Margin="153,529,0,0" VerticalAlignment="Top" Visibility="Visible" />
+            <TextBlock x:Name="cylinderVolumeTextBlock" Text="Volume" TextAlignment="Left" FontSize="24"
+                   HorizontalAlignment="Left" Margin="153,440,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+            <TextBlock x:Name="cylinderAreaTextBlock" Text="Area" TextAlignment="Left" FontSize="24"
+                   HorizontalAlignment="Left" Margin="153,477,0,0" VerticalAlignment="Top" Visibility="Visible" />
 
 
-            <Button x:Name="resetButton" Margin="631,402,50.6,0" VerticalAlignment="Top" Height="50" 
+            <Button x:Name="resetButton" Margin="630,378,51,0" VerticalAlignment="Top" Height="50" 
                 Content="Reset" FontSize="30"
                 BorderBrush="Black" BorderThickness="1" Background="Aqua"  Click="resetButton_Click"
                 Visibility="Hidden" />
