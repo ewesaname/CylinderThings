@@ -24,8 +24,8 @@
                 </Image.Source>
             </Image>
 
-            <TextBlock Text="Pump Up The Volume - You're In The Right Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="191,-32,160,0" 
-               VerticalAlignment="Top" Width="423" Height="149" TextWrapping="Wrap"/>
+            <TextBlock Text="Pump Up The Volume - You're In The Right Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-32,163.4,0" 
+               VerticalAlignment="Top" Width="458" Height="149" TextAlignment="Center" TextWrapping="Wrap"/>
 
 
             <TextBox x:Name="cylinderHeightTextBox" Text="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
@@ -65,8 +65,8 @@
             <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="130" Margin="331,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="130"/>
             <TextBox x:Name="cylinderRadiusTextBox" Text="4" Background="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="350,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" 
                  BorderThickness="0" FontSize="48" FontWeight="DemiBold" TextAlignment="Center"/>
-            
-            <ComboBox x:Name="chooseShapeCombo" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="163" Height="231" />
+
+            <ComboBox x:Name="chooseShapeCombo" HorizontalAlignment="Left" Margin="125,265,0,0" VerticalAlignment="Top" Width="113" Height="131" />
 
         </Grid>
     </Border>
