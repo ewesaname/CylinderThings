@@ -39,8 +39,6 @@ namespace CylinderThings
 
             clickHereTextBlock.Text = "Hang on just a sec...";
 
-            // if (cylinderHeightTextBox = ""); TRYING to come up with an error checker            
-
             // This next bit creates a 'pause for tension...'
 
             clickHereTextBlock.Dispatcher.Invoke(DispatcherPriority.Background, new Action(delegate ()
@@ -79,5 +77,14 @@ namespace CylinderThings
             enterYourUnitsLabel.Visibility = Visibility.Visible;
         }
 
+        private void squareStuffButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void squareStuffButton_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+
+        }
     }
 }
