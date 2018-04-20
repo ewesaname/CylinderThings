@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CylinderThings"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="" Height="630" Width="800" ResizeMode="CanMinimize">
+    <Window.Resources/>
+
 
     <Border BorderBrush="Crimson" BorderThickness="10" CornerRadius="20" Background="LightSteelBlue">
         <Grid Margin="0.4,46.4,-0.8,-46.6">
@@ -15,7 +18,7 @@
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="-29.751"/>
+                        <RotateTransform Angle="-30"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Image.RenderTransform>
@@ -26,7 +29,6 @@
 
             <TextBlock Text="Pump Up The Volume - Spread Out The Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-12,163,0" 
                VerticalAlignment="Top" Width="458" Height="100" TextAlignment="Center" TextWrapping="Wrap"/>
-
 
             <TextBox x:Name="cylinderHeightTextBox" Text="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
                  HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="89"  Margin="80,110,0,0" 

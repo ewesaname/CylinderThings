@@ -74,17 +74,17 @@ namespace CylinderThings
             boomImage.Visibility = Visibility.Hidden;
             cylinderHeightLabel.Visibility = Visibility.Visible;
             cylinderRadiusLabel.Visibility = Visibility.Visible;
-            enterYourUnitsLabel.Visibility = Visibility.Visible;
+            enterYourUnitsLabel.Visibility = Visibility.Visible;           
         }
+
 
         private void squareStuffButton_Click(object sender, RoutedEventArgs e)
         {
+            RectangleRulesWindow RectRulesWindow = new RectangleRulesWindow();
+            RectRulesWindow.ShowDialog();
             
-        }
-
-        private void squareStuffButton_RequestNavigate(object sender, RequestNavigateEventArgs e)
-        {
-
+            //MainWindow(Visibility) = Visibility.Hidden;
+            
         }
     }
 }

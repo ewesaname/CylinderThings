@@ -23,5 +23,11 @@ namespace CylinderThings
         {
             InitializeComponent();
         }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            //rectangleLengthTextBox.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }
