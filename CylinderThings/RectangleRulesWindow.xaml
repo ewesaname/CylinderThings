@@ -8,8 +8,8 @@
         WindowStartupLocation="CenterScreen"
         Title="RectangleRulesWindow" Height="630" Width="800">
 
-    
-    
+
+
     <Border BorderBrush="Crimson" BorderThickness="10" CornerRadius="20" Background="LightSteelBlue">
         <Grid Margin="0.4,46.4,-0.8,-46.6">
             <Image x:Name="boomImage" HorizontalAlignment="Left" Height="400" Margin="-51,65,0,0" VerticalAlignment="Top" Width="433" 
@@ -27,8 +27,8 @@
                 </Image.Source>
             </Image>
 
-            <TextBlock Text="Right Angles and Wrecked Angles" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="236,-12,216.4,0" 
-               VerticalAlignment="Top" Width="328" Height="100" TextAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock Text="Wrecked Angles" FontSize="48" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="191,-12,188.733,0" 
+               VerticalAlignment="Top" Width="394" Height="100" TextAlignment="Center" TextWrapping="Wrap"/>
 
 
             <TextBox x:Name="rectangleLengthTextBox" Text="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
@@ -39,7 +39,7 @@
                     HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="108" Margin="334,110,0,0" 
                     BorderBrush="Black" BorderThickness="2" Background="#FFF4F4F5" />
 
-            <TextBox x:Name="rectangleUnitsTextBox" Text="inches" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontWeight="DemiBold"
+            <TextBox x:Name="rectangleUnitsTextbox" Text="cm" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontWeight="DemiBold"
                 HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="108"  Margin="529,110,0,0" 
                 BorderBrush="Black" BorderThickness="2" Background="#FFF4F4F5" />
 
@@ -52,15 +52,15 @@
 
 
             <Button x:Name="clickHereButton" Margin="267,265,264.6,0" VerticalAlignment="Top" Height="131"
-                BorderBrush="Black" BorderThickness="3" Background="Gold" >
+                BorderBrush="Black" BorderThickness="3" Background="Gold" Click="clickHereButton_Click" >
 
                 <TextBlock x:Name="clickHereTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Width="197" Background="Gold" 
                        Text="Click Here To Work The Magic" Padding="10" TextAlignment="Center" TextWrapping="Wrap" FontSize="24" Height="85" />
             </Button>
 
-            <TextBlock x:Name="cylinderVolumeTextBlock" Text="Volume" TextAlignment="Left" FontSize="24"
+            <TextBlock x:Name="cubeVolumeTextBlock" Text="Volume" TextAlignment="Left" FontSize="24"
                    HorizontalAlignment="Left" Margin="153,440,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-            <TextBlock x:Name="cylinderAreaTextBlock" Text="Area" TextAlignment="Left" FontSize="24"
+            <TextBlock x:Name="squareAreaTextBlock" Text="Area" TextAlignment="Left" FontSize="24"
                    HorizontalAlignment="Left" Margin="153,477,0,0" VerticalAlignment="Top" Visibility="Visible" />
 
 

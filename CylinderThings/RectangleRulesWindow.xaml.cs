@@ -23,11 +23,27 @@ namespace CylinderThings
         {
             InitializeComponent();
         }
+                
+        private void clickHereButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            double rectangleLength = Convert.ToDouble(rectangleLengthTextBox.Text);
+            double rectangleWidth = Convert.ToDouble(rectangleWidthTextBox.Text);
+            string rectangleUnits = rectangleUnitsTextbox.Text;
+            decimal squareArea = Convert.ToDecimal(rectangleLength * rectangleWidth);
+
+            squareAreaTextBlock.Text = ("The area of your square is ") + squareArea + (" square ") + rectangleUnitsTextbox.Text; 
+        }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            //rectangleLengthTextBox.Visibility = Visibility.Hidden;
-            this.Visibility = Visibility.Hidden;
+            rectangleLengthTextBox.Text = ("");
+            rectangleWidthTextBox.Text = ("");
+            rectangleUnitsTextbox.Text = ("");
+
+            squareAreaTextBlock.Text = ("Area:");
+
+            //this.Close();       
         }
     }
 }

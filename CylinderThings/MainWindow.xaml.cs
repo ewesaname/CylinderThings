@@ -19,6 +19,8 @@ namespace CylinderThings
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+     
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -28,14 +30,15 @@ namespace CylinderThings
 
         private void clickHereButton_Click(object sender, RoutedEventArgs e)
         {
-            double userHeight = Convert.ToInt32(cylinderHeightTextBox.Text); // Had to convert to Int32 to get the volume and area variables to calculate.
-            double userRadius = Convert.ToInt32(cylinderRadiusTextBox.Text);
+            double cylinderHeight = Convert.ToDouble(cylinderHeightTextBox.Text); // Had to convert Text to Double to get the volume and area variables to calculate.
+            double cylinderRadius = Convert.ToDouble(cylinderRadiusTextBox.Text);
             double pi = 3.1415926;
             string units = unitsTextBox.Text;
-            decimal volume = Convert.ToDecimal(pi * userRadius * userRadius * userHeight);
-            decimal area = Convert.ToDecimal(2 * pi * userRadius * (userRadius + userHeight));
+            decimal volume = Convert.ToDecimal(pi * cylinderRadius * cylinderRadius * cylinderHeight);
+            decimal area = Convert.ToDecimal(2 * pi * cylinderRadius * (cylinderRadius + cylinderHeight));
             volume = Math.Round(volume, 2); // Restricts answer to two decimal places.
             area = Math.Round(area, 2);
+
 
             clickHereTextBlock.Text = "Hang on just a sec...";
 
@@ -83,8 +86,16 @@ namespace CylinderThings
             RectangleRulesWindow RectRulesWindow = new RectangleRulesWindow();
             RectRulesWindow.ShowDialog();
             
-            //MainWindow(Visibility) = Visibility.Hidden;
-            
+            this.Visibility = Visibility.Visible;
+
+        }
+        private void triangleStuffButton_Click(object sender, RoutedEventArgs e)
+        {
+            TriangularTittilation triangularTittilation = new TriangularTittilation();
+            triangularTittilation.ShowDialog();
+
+            this.Visibility = Visibility.Visible;
+
         }
     }
 }

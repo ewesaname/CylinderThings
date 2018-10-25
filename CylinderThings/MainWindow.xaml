@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="" Height="630" Width="800" ResizeMode="CanMinimize">
-    <Window.Resources/>
 
 
     <Border BorderBrush="Crimson" BorderThickness="10" CornerRadius="20" Background="LightSteelBlue">
@@ -27,7 +26,7 @@
                 </Image.Source>
             </Image>
 
-            <TextBlock Text="Pump Up The Volume - Spread Out The Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-12,163,0" 
+            <TextBlock Text="Pump Up The Volume - All Over The Area!" FontSize="36" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="153,-12,163,0" 
                VerticalAlignment="Top" Width="458" Height="100" TextAlignment="Center" TextWrapping="Wrap"/>
 
             <TextBox x:Name="cylinderHeightTextBox" Text="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontWeight="DemiBold"
@@ -67,9 +66,12 @@
             <TextBox x:Name="cylinderRadiusTextBox" Text="4" Background="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="350,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" 
                  BorderThickness="0" FontSize="48" FontWeight="DemiBold" TextAlignment="Center"/>
 
-            <Button x:Name="squareStuffButton" Content="Square Stuff" VerticalAlignment="Top" Height="50" 
-                    FontSize="30" BorderBrush="Black" BorderThickness="1" Background="Aqua"  
-                    Visibility="Visible" Margin="26,312,534,0" Click="squareStuffButton_Click"/>
+            <Button x:Name="squareStuffButton" Content="Wrecked Angles" VerticalAlignment="Top" Height="46" 
+                    FontSize="20" BorderBrush="Black" BorderThickness="1" Background="Aqua"  
+                    Visibility="Visible" Margin="544,294,31.067,0" Click="squareStuffButton_Click"/>
+            <Button x:Name="triangleStuffButton" Content="Triangular Tittilation" VerticalAlignment="Top" Height="46" 
+                FontSize="20" BorderBrush="Black" BorderThickness="1" Background="Aqua"  
+                Visibility="Visible" Margin="544,344,30.067,0" Click="triangleStuffButton_Click"/>
 
         </Grid>
     </Border>
